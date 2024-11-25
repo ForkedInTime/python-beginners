@@ -55,7 +55,7 @@ We need a **loop**! Should we use a `while` or a `for` loop? As we _know in adva
 #         print n
 ```
 
-:warning: Beware, this pseudo-code contains a **bug** :bug: - Can you spot it? If you don't, carry on, it will reveal itself later...
+⚠️ Beware, this pseudo-code contains a **bug** 🐛 - Can you spot it? If you don't, carry on, it will reveal itself later...
 
 </details>
 
@@ -94,5 +94,5 @@ Again, let's save our progress with GitHub Desktop. Try to repeat what you did f
 
 ## What's next?
 
-For some exercises you will have the possibility to choose between a standard exercise and an exercise with Data more oriented on a trade. 
-Take the one you like the most, the 2 exercises are similar on the concepts used. The choice is mainly based on your focus and expectations, you may prefer to proceed with different subjects for the exercises when there is an alternative. 
+For some exercises you will have the possibility to choose between a standard exercise and an exercise with Data more oriented on a trade.
+Take the one you like the most, the 2 exercises are similar on the concepts used. The choice is mainly based on your focus and expectations, you may prefer to proceed with different subjects for the exercises when there is an alternative.
