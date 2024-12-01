@@ -1,20 +1,26 @@
 # Add a user to the tricount dictionary with a spent amount equals to 0
 def add_user(tricount, user):
+    tricount[user] = 0.0
     pass
 
 
 # Add an amount to the existing spent amount of a user
 def add_amount(tricount, user, amount):
+    if user not in tricount:
+        tricount[user] = 0.0
+    tricount[user] += amount
     pass
 
 
 # Returns the amount spent by a user
 def get_spent_amount(tricount, user):
+    return tricount.get(user, 0.0)
     pass
 
 
 # Returns the total of the spent amounts
 def total_amount(tricount):
+    return sum(tricount.values())
     pass
 
 
@@ -22,11 +28,17 @@ def total_amount(tricount):
 # This total is the sum of the spent amounts divided by the number of users minus the amount you already paid
 # You balance may be negativ if you're owed money
 def get_due_amount(tricount, user):
+    total_spent = sum(tricount.values())
+    num_users = len(tricount)
+    shared_cost = total_spent / num_users
+    user_spent = tricount.get(user, 0.0)
+    return shared_cost - user_spent
     pass
 
 
 # Delete a user from the tricount without making any financial transfer
 def delete(tricount, user):
+    return tricount.pop(user, None)
     pass
 
 

@@ -11,3 +11,4 @@ from tricount import add_user, add_amount, get_spent_amount, \
 # Return a new dictionary with as keys all the users except Lucile and as values what you owe to them using debts_dictionary()
 
 # YOUR CODE
+tri_count_dic = {"Eric": 0.0, "Tanguy": 40.0, "Lucile": 0.0, 'Michael': 20.0}
